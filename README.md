@@ -31,7 +31,6 @@ RandomForestClassifier (BayesSearchCV): to grow a magical forest where the trees
 
 
 ## RESULTS
-A summary of your results and what you can learn from your model 
 
 Our model proved to be quite the sleuth in identifying fraudulent transactions. It could accurately spot a high percentage of frauds, significantly reducing the risk for everyone involved. We learned that even though no model is perfect, with the right data and settings, we can greatly minimize the threat of online payment fraud. Below is an example plot showing our model's accuracy:
 
@@ -41,6 +40,5 @@ Our model proved to be quite the sleuth in identifying fraudulent transactions. 
 
 
 ## CONTACT DETAILS
-If you are planning on making your github repo public you may wish to include some contact information such as a link to your twitter or an email address. 
 
-If you're interested in learning more about our project or have suggestions for improvements, feel free to reach out or follow our work on GitHub at [Your GitHub Repo Link]. For direct inquiries or collaboration opportunities, email us at [your_email@example.com].
+If you're interested in learning more about our project or have suggestions for improvements, feel free to reach out or follow our work on GitHub at [Your GitHub Repo Link]. For direct inquiries or collaboration opportunities, reach out at [LinkedIn](https://www.linkedin.com/in/jingchen-ku/).
