@@ -1,3 +1,5 @@
+![alt text](https://github.com/jdchen5/imperialMLnAI_CSproject/blob/main/images/fraudDectionIcon.jpg)
+
 # ONLINE PAYMENT FRAUD DETECTION MODEL
 
 
@@ -34,7 +36,7 @@ RandomForestClassifier (BayesSearchCV): to grow a magical forest where the trees
 
 Our model proved to be quite the sleuth in identifying fraudulent transactions. It could accurately spot a high percentage of frauds, significantly reducing the risk for everyone involved. We learned that even though no model is perfect, with the right data and settings, we can greatly minimize the threat of online payment fraud. Below is an example plot showing our model's accuracy:
 
-<img src="https://github.com/jdchen5/imperialMLnAI_CSproject/blob/main/images/precision-Recall-Curve.png" alt="Performance Graph" width="500"/>
+![alt text](https://github.com/jdchen5/imperialMLnAI_CSproject/blob/main/images/precison-Recall-Curve.png?raw=true)
 
 *Graph showing model performance across various metrics.*
 
