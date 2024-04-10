@@ -41,4 +41,4 @@ Our model proved to be quite the sleuth in identifying fraudulent transactions. 
 
 ## CONTACT DETAILS
 
-If you're interested in learning more about our project or have suggestions for improvements, feel free to reach out or follow our work on GitHub at [Your GitHub Repo Link]. For direct inquiries or collaboration opportunities, reach out at [LinkedIn](https://www.linkedin.com/in/jingchen-ku/).
+If you're interested in learning more about our project or have suggestions for improvements, feel free to reach out or follow our work on GitHub at [my GitHub Repo Link](https://github.com/jdchen5/imperialMLnAI_CSproject.git). For direct inquiries or collaboration opportunities, reach out at [LinkedIn](https://www.linkedin.com/in/jingchen-ku/).
