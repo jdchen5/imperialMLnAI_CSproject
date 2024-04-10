@@ -35,7 +35,7 @@ A summary of your results and what you can learn from your model
 
 Our model proved to be quite the sleuth in identifying fraudulent transactions. It could accurately spot a high percentage of frauds, significantly reducing the risk for everyone involved. We learned that even though no model is perfect, with the right data and settings, we can greatly minimize the threat of online payment fraud. Below is an example plot showing our model's accuracy:
 
-<img src="/images/precision-Recall-Curve.png" alt="Performance Graph" width="500"/>
+<img src="images/precision-Recall-Curve.png" alt="Performance Graph" width="500"/>
 
 *Graph showing model performance across various metrics.*
 
