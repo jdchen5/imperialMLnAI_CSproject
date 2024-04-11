@@ -34,12 +34,26 @@ RandomForestClassifier (BayesSearchCV): to grow a magical forest where the trees
 
 ## RESULTS
 
-Our model proved to be quite the sleuth in identifying fraudulent transactions. It could accurately spot a high percentage of frauds, significantly reducing the risk for everyone involved. We learned that even though no model is perfect, with the right data and settings, we can greatly minimize the threat of online payment fraud. Below is an example plot showing our model's accuracy:
+Given the prevalence of class imbalance in fraud detection datasets—where fraudulent transactions are significantly outnumbered by legitimate ones—our evaluation metrics are chosen to provide insight into the model's true predictive power:
+
+| Model                                | Accuracy (%) | Precision | Recall | F1-Score | PR AUC | ROC AUC |
+|--------------------------------------|--------------|-----------|--------|----------|--------|---------|
+| Logistic Regression (GridSearchCV)   | 99.89        | 1         | 1      | 1        | 0.02   | 0.92    |
+|** RandomForest (BayesSearchCV) **        | 99.93        | 1         | 1      | 1        | 0.6    | 0.96  |
+|** RandomForest (RandomizedSearchCV) **    | 99.93        | 1         | 1      | 1        | 0.57   | 0.89 |
+| DecisionTree (GridSearchCV)          | 99.91        | 1         | 1      | 1        | 0.43   | 0.88    |
+| Stacked Model                        | 99.9         | 1         | 1      | 1        | 0.54   | 0.95    |
+
+* Accuracy: While all model variants report an accuracy exceeding 99.89%, this metric can be misleading in the context of a biased dataset. High accuracy might reflect the underlying class distribution rather than the model's ability to detect fraud.
+* Precision, Recall, & F1-Score: Scores of 1 across these metrics indicate exceptional model performance; however, these should be interpreted with caution due to the possibility of overfitting to the majority class.
+* PR AUC: The Random Forest model optimised with BayesSearchCV shows the highest PR AUC of 0.60. In imbalanced datasets, the PR AUC is a more informative metric as it focuses on the minority class's performance.
+* ROC AUC: The high ROC AUC scores suggest that the models discriminate well between classes under various threshold settings. RandomForest (BayesSearchCV) model achieves the highest ROC AUC of 0.96.
 
 ![alt text](https://github.com/jdchen5/imperialMLnAI_CSproject/blob/main/images/precison-Recall-Curve.png?raw=true)
 
 *Graph showing model performance across various metrics.*
 
+The potential bias in the dataset necessitates a careful interpretation of the model's performance. The perfection in precision and recall may partly stem from the model's ability to recognise the overwhelming majority class. However, in the real world, the efficacy of a fraud detection system is measured by its ability to correctly identify the minority fraudulent transactions without an excessive number of false positives.
 
 ## CONTACT DETAILS
 
