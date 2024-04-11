@@ -2,7 +2,9 @@
 
 Our model is designed to analyse online payment transactions to detect potential fraud. By examining features like transaction amounts, account balances before and after transactions, and the timing of these activities, it applies a combination of machine learning techniques to predict fraudulent behavior. This model utilises statistical analysis and classification algorithms, including RandomForest and DecisionTree classifiers, optimised through methods like GridSearchCV, BayesSearchCV and RandomizedSearchCV, to identify patterns indicative of fraud. Its performance is evaluated based on accuracy, precision, recall, and the area under the precision-recall curve, providing a comprehensive understanding of its effectiveness in distinguishing between legitimate and fraudulent transactions. This analytical approach allows for enhanced security in online financial activities by identifying and flagging suspicious transactions.
 
-![Performance Graph](https://github.com/jdchen5/imperialMLnAI_CSproject/blob/main/images/precison-Recall-Curve.png?raw=true)
+![Performance Graph](https://github.com/jdchen5/imperialMLnAI_CSproject/blob/main/images/precison-Recall-Curve-RandomForestClassifier.png?raw=true)
+
+![alt text](https://github.com/jdchen5/imperialMLnAI_CSproject/blob/main/images/RandomForestClassifier-confusionMatrix.png?raw=true)
 
 *Graph showing model performance across various metrics.*
 
@@ -10,12 +12,6 @@ Our model is designed to analyse online payment transactions to detect potential
 # <span style="color:#4285F4;">Online Payment Fraud Detection Model Card</span>
 
 Our model is designed to analyse online payment transactions to detect potential fraud. By examining features like transaction amounts, account balances before and after transactions, and the timing of these activities, it applies a combination of machine learning techniques to predict fraudulent behavior. This model utilises statistical analysis and classification algorithms, including RandomForest and DecisionTree classifiers, optimised through methods like GridSearchCV, BayesSearchCV and RandomizedSearchCV, to identify patterns indicative of fraud. Its performance is evaluated based on accuracy, precision, recall, and the area under the precision-recall curve, providing a comprehensive understanding of its effectiveness in distinguishing between legitimate and fraudulent transactions. This analytical approach allows for enhanced security in online financial activities by identifying and flagging suspicious transactions.
-
-![Performance Graph](https://github.com/jdchen5/imperialMLnAI_CSproject/blob/main/images/precison-Recall-Curve-RandomForestClassifier.png?raw=true)
-![alt text](https://github.com/jdchen5/imperialMLnAI_CSproject/blob/main/images/RandomForestClassifier-confusionMatrix.jpg)
-
-*Graph showing model performance across various metrics.*
-
 
 ## <span style="color:#4285F4;">MODEL DESCRIPTION</span>
 ![alt text](https://github.com/jdchen5/imperialMLnAI_CSproject/blob/main/images/fraudDectionIcon.jpg)
