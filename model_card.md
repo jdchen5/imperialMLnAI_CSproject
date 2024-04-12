@@ -32,20 +32,16 @@ The model inputs include various features from a financial dataset, specifically
 
 **Model Architecture:**
 
-![RandomForestClassifier fromScikit-learn(Python)](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html)
+[RandomForestClassifier](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html) fromScikit-learn(Python).
 
 
 ## <span style="color:#4285F4;">PERFORMANCE</span>
 
 The model's performance is evaluated using accuracy, precision, recall, and the area under the precision-recall curve (PR AUC). Performance metrics are provided for multiple models, with additional insights from confusion matrices and precision-recall curves. From the table below, the recommended model demonstrated high accuracy in fraud detection, with further details on performance metrics such as the model accuracy score, which reflects the model's effectiveness in classifying fraudulent transactions.
 
-| Model                                | Accuracy (%) | Precision | Recall | F1-Score | PR AUC | ROC AUC |
-|--------------------------------------|--------------|-----------|--------|----------|--------|---------|
-| Logistic Regression (GridSearchCV)   | 99.89        | 1         | 1      | 1        | 0.02   | 0.92    |
-| RandomForest (BayesSearchCV)         | 99.93        | 1         | 1      | 1        | 0.6    | 0.96    |
-| RandomForest (RandomizedSearchCV)    | 99.93        | 1         | 1      | 1        | 0.57   | 0.89    |
-| DecisionTree (GridSearchCV)          | 99.91        | 1         | 1      | 1        | 0.43   | 0.88    |
-| Stacked Model                        | 99.9         | 1         | 1      | 1        | 0.54   | 0.95    |
+![alt text](https://github.com/jdchen5/imperialMLnAI_CSproject/blob/main/images/performanceMatrix.jpg?raw=true)
+
+![alt text](https://github.com/jdchen5/imperialMLnAI_CSproject/blob/main/images/precison-Recall-Curve-RandomForestClassifier-withBalancedDS.png?raw=true)
 
 
 ## <span style="color:#4285F4;">LIMITATIONS</span>
