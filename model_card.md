@@ -30,8 +30,9 @@ The model inputs include various features from a financial dataset, specifically
 **Output:**
 - Binary classification: `0` for legitimate, `1` for fraudulent
 
-**Model Architecture:** 
-RandomForestClassifier fromScikit-learn(Python)
+**Model Architecture:**
+
+![RandomForestClassifier fromScikit-learn(Python)](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html)
 
 
 ## <span style="color:#4285F4;">PERFORMANCE</span>
