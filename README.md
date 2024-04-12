@@ -10,14 +10,17 @@ Our model acts as a digital detective, trained to distinguish between regular on
 
 ## DATA
 
-We used a dataset that contains information on hundreds of thousands of online transactions, including whether they were fraudulent or not. This data includes details like the amount of money involved, the accounts sending and receiving the money, and when the transactions took place. The dataset was generously made available by Kaggle, and you can find it here. [https://www.kaggle.com/datasets/pankajtiwari2003/fraudlent-transaction]
+We used a dataset that contains information on hundreds of thousands of online transactions, including whether they were fraudulent or not. This data includes details like the amount of money involved, the accounts sending and receiving the money, and when the transactions took place. The dataset was generously made available by Kaggle, and you can find it [here](https://www.kaggle.com/datasets/pankajtiwari2003/fraudlent-transaction).
 
 
 ## MODEL 
 
-This modesl serve as the brain of our digital detective, interpreting complex data to make smart decisions swiftly. We employ multiple machine learning models, including RandomForestClassifier and DecisionTreeClassifier, optimised via GridSearchCV, BayesSearchCV, and RandomizedSearchCV. Decision Tree model was chosen for its transparency in decision-making, which is crucial for establishing trust when managing financial transactions. 
+This model serves as the brain of our digital detective, analysing complex financial data to make smart decisions swiftly. We tested several different "detective strategies" (machine learning models), with the RandomForestClassifier standing out among them. We fine-tuned the model with advanced techniques (GridSearchCV, BayesSearchCV, and RandomizedSearchCV) to ensure its accuracy and resilience in handling complex cases. It's particularly good at maintaining high precision and recall across different situations – that's critical for making the right calls in real-time.
 
-A significant part of the analysis involves feature importance analysis, hypothesis testing for predictor significance, and stacking classifiers to improve prediction accuracy. All chosen models excel in classification tasks.
+
+We also take a close look at which bits of information are most helpful (feature importance analysis), and double-check our assumptions (hypothesis testing to validate predictor significance). We even combine different methods (stacked classifiers) for the best possible outcomes. Decision trees offer easy-to-follow reasoning, but Random Forest is our top choice for its adaptability and reliability, ensuring we can trust it to manage financial transactions efficiently.
+
+Each model we tested is good at what it does. However, Random Forest is like assembling a whole team of detectives. This teamwork leads to more accurate and reliable results, making it the ultimate tool in our investigation kit.
 
 
 ## HYPERPARAMETER OPTIMSATION
@@ -34,27 +37,23 @@ RandomForestClassifier (BayesSearchCV): to grow a magical forest where the trees
 
 ## RESULTS
 
-Given the prevalence of class imbalance in fraud detection datasets—where fraudulent transactions are significantly outnumbered by legitimate ones—our evaluation metrics are chosen to provide insight into the model's true predictive power:
+Given the prevalence of class imbalance in fraud detection datasets — where fraudulent transactions are significantly outnumbered by legitimate ones. This disparity often skews performance metrics, hence our focus on more discerning evaluation criteria:
 
-| Model                                | Accuracy (%) | Precision | Recall | F1-Score | PR AUC | ROC AUC |
-|--------------------------------------|--------------|-----------|--------|----------|--------|---------|
-| Logistic Regression (GridSearchCV)   | 99.89        | 1         | 1      | 1        | 0.02   | 0.92    |
-|** RandomForest (BayesSearchCV) **        | 99.93        | 1         | 1      | 1        | 0.6    | 0.96  |
-|** RandomForest (RandomizedSearchCV) **    | 99.93        | 1         | 1      | 1        | 0.57   | 0.89 |
-| DecisionTree (GridSearchCV)          | 99.91        | 1         | 1      | 1        | 0.43   | 0.88    |
-| Stacked Model                        | 99.9         | 1         | 1      | 1        | 0.54   | 0.95    |
+![alt text](https://github.com/jdchen5/imperialMLnAI_CSproject/blob/main/images/performanceMatrix.jpg?raw=true)
 
-* Accuracy: While all model variants report an accuracy exceeding 99.89%, this metric can be misleading in the context of a biased dataset. High accuracy might reflect the underlying class distribution rather than the model's ability to detect fraud.
-* Precision, Recall, & F1-Score: Scores of 1 across these metrics indicate exceptional model performance; however, these should be interpreted with caution due to the possibility of overfitting to the majority class.
-* PR AUC: The Random Forest model optimised with BayesSearchCV shows the highest PR AUC of 0.60. In imbalanced datasets, the PR AUC is a more informative metric as it focuses on the minority class's performance.
-* ROC AUC: The high ROC AUC scores suggest that the models discriminate well between classes under various threshold settings. RandomForest (BayesSearchCV) model achieves the highest ROC AUC of 0.96.
 
-![alt text](https://github.com/jdchen5/imperialMLnAI_CSproject/blob/main/images/precison-Recall-Curve.png?raw=true)
+* Accuracy: Although all our models show accuracy over 90%, this figure might not tell the whole story in a dataset where frauds are rare. Such high accuracy could merely echo the prevalent class distribution.
+* Precision, Recall, & F1-Score: Perfect scores in these metrics might typically signal top-notch performance. But again, we must be wary; it's possible that the models might just be echoing the majority class—a sign of potential overfitting.
+* PR AUC: A standout result is the PR AUC score, which is particularly telling in the context of imbalanced datasets. Our Random Forest model, refined with BayesSearchCV, has achieved an impressive PR AUC, indicating its strength in honing in on the less frequent fraudulent transactions.
+* ROC AUC: Similarly, our models fare well with ROC AUC scores, indicating a good distinction between classes across different thresholds. Notably, the Random Forest model tuned with BayesSearchCV reached the highest ROC AUC of 0.96.
+
+![alt text](https://github.com/jdchen5/imperialMLnAI_CSproject/blob/main/images/precison-Recall-Curve-RandomForestClassifier-withBalancedDS.png?raw=true)
 
 *Graph showing model performance across various metrics.*
 
-The potential bias in the dataset necessitates a careful interpretation of the model's performance. The perfection in precision and recall may partly stem from the model's ability to recognise the overwhelming majority class. However, in the real world, the efficacy of a fraud detection system is measured by its ability to correctly identify the minority fraudulent transactions without an excessive number of false positives.
+When we introduced balance to the dataset, aiming for a fair representation of both classes, our Random Forest model (optimised with BayesSearchCV) demonstrated its reliability. The PR AUC soared to 0.98, underscoring its proficiency in detecting fraud even when fraudulent transactions are less frequent than legitimate ones.
 
+This balanced view of the dataset is crucial. While our models might seem to excel across all fronts, the true test of their value lies in their ability to sniff out fraud accurately—minimising false positives — rather than simply recognising the majority class of legitimate transactions.
 ## CONTACT DETAILS
 
 If you're interested in learning more about our project or have suggestions for improvements, feel free to reach out or follow our work on GitHub at [my GitHub Repo Link](https://github.com/jdchen5/imperialMLnAI_CSproject.git). For direct inquiries or collaboration opportunities, reach out at [LinkedIn](https://www.linkedin.com/in/jingchen-ku/).
