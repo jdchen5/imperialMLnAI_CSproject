@@ -1,16 +1,16 @@
 # Datasheet
-
+<br/><br/>
 
 
 ## Motivation
 
 * #### For what purpose was the dataset created?
-  The dataset was created for the purpose of online payment fraud detection. It serves as a valuable resource for developing and testing       machine learning models to identify and prevent fraudulent transactions in real-time.
+  The dataset was created for the purpose of online payment fraud detection. It serves as a valuable resource for developing and testing       machine learning models to identify and prevent fraudulent transactions.
     
 * #### Who created the dataset (e.g., which team, research group) and on behalf of which entity (e.g., company, institution, organization)? Who funded the creation of the dataset?
 
   Unfortunately, the specific team, research group, or entity responsible for creating this dataset is not explicitly mentioned in the         description, nor are the details about the funding sources provided. However, the license is owned by MIT.
-
+<br/><br/>
  
 ## Composition
 
@@ -25,7 +25,7 @@
 	
 * #### Does the dataset contain data that might be considered confidential (e.g., data that is protected by legal privilege or by    doctor–patient confidentiality, data that includes the content of individuals’ non-public communications)?*
   There is no indication that the dataset contains confidential information such as legal privilege or doctor–patient confidentiality.  
-    
+<br/><br/>    
 
 ## Collection process
 
@@ -37,14 +37,14 @@
 	
 * #### Over what time frame was the data collected?
   The time frame over which the data was collected is not explicitly provided in the dataset description.
-    
+<br/><br/>    
     
 ## Preprocessing/cleaning/labelling
 
 * #### Was any preprocessing/cleaning/labeling of the data done (e.g., discretization or bucketing, tokenization, part-of-speech tagging, SIFT feature extraction, removal of instances, processing of missing values)? If so, please provide a description. If not, you may skip the remaining questions in this section. 
 
   The description does not mention specific preprocessing steps. However, it appears that preprocessing or cleaning may have been done prior   to sharing of the dataset in Kaggle.
-
+<br/><br/>
  
 ## Uses
 
@@ -56,7 +56,7 @@
 
 * #### Are there tasks for which the dataset should not be used? If so, please provide a description.
   The dataset should not be used for purposes that could harm individuals or result in legal or financial risks.
-    
+<br/><br/>    
 
 ## Distribution
 
@@ -65,7 +65,7 @@
 	
 * #### Is it subject to any copyright or other intellectual property (IP) license, and/or under applicable terms of use (ToU)?  
   MIT owned the license and no other information provided any terms of use.
-    
+<br/><br/>    
 
 ## Maintenance
 
